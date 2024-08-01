@@ -1,10 +1,10 @@
 import { PerspectiveCamera } from 'three';
-import { Experience } from './Experience';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
+import { Experience } from './Experience';
 
 export class Camera {
-  constructor() {
-    this.experinece = new Experience();
+  constructor(experience) {
+    this.experinece = experience;
     this.sizes = this.experinece.sizes;
     this.scene = this.experinece.scene;
     this.canvas = this.experinece.canvas;

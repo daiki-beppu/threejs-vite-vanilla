@@ -1,9 +1,8 @@
 import * as THREE from 'three';
-import { Experience } from '../Experience';
 
 export class World {
-  constructor() {
-    this.experinece = new Experience();
+  constructor(experience) {
+    this.experinece = experience;
     this.scene = this.experinece.scene;
     this.resources = this.experinece.resources;
     this.debug = this.experinece.debug;
@@ -17,7 +16,7 @@ export class World {
       new THREE.BoxGeometry(3, 3, 3),
       new THREE.MeshBasicMaterial({
         color: 'orange',
-      })
+      }),
     );
     if (this.debug.active) {
     }
