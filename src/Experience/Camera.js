@@ -1,6 +1,5 @@
 import { PerspectiveCamera } from 'three';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
-import { Experience } from './Experience';
 
 export class Camera {
   constructor(experience) {
@@ -9,7 +8,7 @@ export class Camera {
     this.scene = this.experinece.scene;
     this.canvas = this.experinece.canvas;
 
-    this.cameraParams = {
+    this.cameraConfig = {
       fov: 35,
       aspect: this.sizes.width / this.sizes.height,
       near: 0.1,
@@ -21,7 +20,7 @@ export class Camera {
     this.setControls();
   }
   setInstance() {
-    const { fov, aspect, near, far, position } = this.cameraParams;
+    const { fov, aspect, near, far, position } = this.cameraConfig;
     this.instance = new PerspectiveCamera(fov, aspect, near, far);
     this.instance.position.set(position.x, position.y, position.z);
     this.scene.add(this.instance);
@@ -32,7 +31,7 @@ export class Camera {
   }
 
   resize() {
-    this.instance.aspect = this.cameraParams.aspect;
+    this.instance.aspect = this.cameraConfig.aspect;
     this.instance.updateMatrix();
   }
 
