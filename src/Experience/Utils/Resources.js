@@ -1,15 +1,16 @@
 import * as THREE from 'three';
 import { FontLoader, GLTFLoader } from 'three/examples/jsm/Addons.js';
 import { EventEmitter } from './EventEmitter';
+import { assets } from '../assets';
 
 export class Resources extends EventEmitter {
-  constructor(sources) {
+  constructor(assets) {
     super();
 
-    this.sources = sources;
+    this.assets = assets;
 
     this.item = {};
-    this.toLoad = this.sources.length;
+    this.toLoad = this.assets.length;
     this.toLoad = 0;
 
     this.setLoaders();
@@ -25,7 +26,7 @@ export class Resources extends EventEmitter {
     };
   }
   staertLoading() {
-    for (const source of this.sources) {
+    for (const source of this.assets) {
       if (source.type === 'gltfModel') {
         this.loaders.gltfLoader.load(source.path, (file) => {
           this.sourceLoaded(source, file);
