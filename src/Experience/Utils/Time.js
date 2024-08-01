@@ -1,4 +1,3 @@
-import { triNoise3D } from 'three/webgpu';
 import { EventEmitter } from './EventEmitter.js';
 
 export class Time extends EventEmitter {
@@ -11,7 +10,7 @@ export class Time extends EventEmitter {
     this.delta = 16;
 
     window.requestAnimationFrame(() => {
-      this.ticlk();
+      this.tick();
     });
   }
 
