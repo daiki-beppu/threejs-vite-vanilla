@@ -1,3 +1,5 @@
+< 日本語 >
+
 # threejs-vite-vanilla
 
 このリポジトリは、Three.jsとViteを使用したバニラJavaScriptプロジェクトのGitHubテンプレートです。
@@ -82,3 +84,98 @@ threejs-vite-vanilla/
 ---
 
 本テンプレートを使用して開発を始めてください。
+
+---
+
+< English >
+
+# threejs-vite-vanilla
+
+This repository is a GitHub template for a vanilla JavaScript project using Three.js and Vite.
+
+## Overview
+
+This template provides a starting point for 3D graphics development using Three.js within Vite's fast development environment.
+
+## Features
+
+- 3D rendering functionality using Three.js
+- Fast development environment and build process with Vite
+- Easy GUI controls with lil-gui
+- Clean implementation in vanilla JavaScript
+
+## Project Structure
+threejs-vite-vanilla/
+├── node_modules/
+├── public/
+├── src/
+│   ├── lib/
+│   │   └── three-helpers.js
+│   ├── scripts/
+│   │   └── main.js
+│   └── styles/
+│       └── style.css
+├── .gitignore
+├── biome.json
+├── index.html
+├── package-lock.json
+├── package.json
+└── vite.config.js
+
+## Usage
+
+1. Create a new repository using this template:
+   - Click the "Use this template" button on GitHub.
+   - Enter a new repository name and add a description if needed.
+   - Click "Create repository from template".
+
+2. Clone your newly created repository locally:
+git clone [your new repository URL]
+cd [repository name]
+Copy
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Start the development server:
+
+```
+npm run dev
+```
+
+## Development
+
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the project.
+- `npm run preview`: Preview the built project.
+
+## Customization
+
+You can customize this template by:
+
+1. Editing `src/scripts/main.js` to add or modify 3D scenes and objects.
+2. Utilizing Three.js helper functions in `src/lib/three-helpers.js`.
+3. Adding interactive controls using lil-gui.
+4. Customizing styles in `src/styles/style.css`.
+5. Installing additional npm packages as needed.
+
+## Tech Stack
+
+- [Three.js](https://threejs.org/) v0.167.0 - 3D graphics library
+- [Vite](https://vitejs.dev/) v5.3.5 - Next generation frontend tooling
+- [lil-gui](https://lil-gui.georgealways.com/) v0.19.2 - Lightweight GUI controls library
+- [Biome](https://biomejs.dev/) v1.8.3 - Fast and elegant code formatter
+
+## License
+
+[Insert license information here]
+
+## Contributing
+
+Contributions to this template are welcome. Please open an issue to report problems or suggest improvements.
+
+---
+
+Start developing with this template. Happy coding!
