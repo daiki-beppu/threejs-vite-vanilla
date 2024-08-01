@@ -1,4 +1,4 @@
-< 日本語 >
+**< 日本語 >**
 
 # threejs-vite-vanilla
 
@@ -85,9 +85,8 @@ threejs-vite-vanilla/
 
 本テンプレートを使用して開発を始めてください。
 
----
 
-< English >
+**< English >**
 
 # threejs-vite-vanilla
 
