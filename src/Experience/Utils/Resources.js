@@ -39,7 +39,7 @@ export class Resources extends EventEmitter {
           this.sourceLoaded(source, file);
         });
       } else if (source.type === 'font') {
-        this.loaders.cubeTextureLoader.load(source.path, (file) => {
+        this.loaders.fontLoader.load(source.path, (file) => {
           this.sourceLoaded(source, file);
         });
       }
