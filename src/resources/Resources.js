@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { FontLoader, GLTFLoader } from 'three/examples/jsm/Addons.js';
-import { EventEmitter } from './EventEmitter';
+import { EventEmitter } from '../utils/EventEmitter';
 
 export class Resources extends EventEmitter {
   constructor(assets) {

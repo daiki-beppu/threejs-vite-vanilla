@@ -2,11 +2,11 @@ import { PerspectiveCamera } from 'three';
 import { OrbitControls } from 'three/examples/jsm/Addons.js';
 
 export class Camera {
-  constructor(experience) {
-    this.experinece = experience;
-    this.sizes = this.experinece.sizes;
-    this.scene = this.experinece.scene;
-    this.canvas = this.experinece.canvas;
+  constructor(appCore) {
+    this.appCore = appCore;
+    this.sizes = this.appCore.sizes;
+    this.scene = this.appCore.scene;
+    this.canvas = this.appCore.canvas;
 
     this.cameraConfig = {
       fov: 35,
