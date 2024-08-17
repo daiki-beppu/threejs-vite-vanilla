@@ -1,4 +1,9 @@
 export const assets = [
+  {
+    name: 'envMap',
+    type: 'hdrTexture',
+    path: 'envMap/default.hdr',
+  },
   // {
   //   name: '',
   //   type: 'gltfmodel',

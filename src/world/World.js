@@ -1,6 +1,5 @@
 import * as THREE from 'three';
-import fragmentShader from '../shaders/fragment.glsl';
-import vertexShader from '../shaders/vertex.glsl';
+import { Environment } from './environment/Enviroment';
 
 export class World {
   constructor(appCore) {
@@ -9,6 +8,10 @@ export class World {
     this.resources = this.appCore.resources;
     this.debug = this.appCore.debug;
 
+    this.resources.on('ready', () => {
+      this.environment = new Environment(this);
+    });
+
     if (this.debug.active) {
       this.debugFolder = this.debug.ui.addFolder('test');
     }
@@ -16,9 +19,10 @@ export class World {
     // テストメッシュ
     const testMesh = new THREE.Mesh(
       new THREE.BoxGeometry(3, 3, 3),
-      new THREE.ShaderMaterial({
-        vertexShader: vertexShader,
-        fragmentShader: fragmentShader,
+      new THREE.MeshStandardMaterial({
+        color: 'red',
+        // vertexShader: vertexShader,
+        // fragmentShader: fragmentShader,
       }),
     );
     if (this.debug.active) {
