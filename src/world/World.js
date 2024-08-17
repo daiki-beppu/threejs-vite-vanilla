@@ -20,7 +20,6 @@ export class World {
     const testMesh = new THREE.Mesh(
       new THREE.BoxGeometry(3, 3, 3),
       new THREE.MeshStandardMaterial({
-        color: 'red',
         // vertexShader: vertexShader,
         // fragmentShader: fragmentShader,
       }),
