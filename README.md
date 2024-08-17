@@ -16,22 +16,47 @@
 - バニラJavaScriptでのクリーンな実装
 
 ## プロジェクト構造
-threejs-vite-vanilla/
-├── node_modules/
-├── public/
-├── src/
-│   ├── lib/
-│   │   └── three-helpers.js
-│   ├── scripts/
-│   │   └── main.js
-│   └── styles/
-│       └── style.css
-├── .gitignore
+
+```shell
+
+threejs-vite-vanila/
+├── README.md
+├── assets
+│   ├── envMap
+│   │   └── default.hdr
+│   ├── font
+│   ├── model
+│   └── textures
 ├── biome.json
-├── index.html
-├── package-lock.json
+├── bun.lockb
 ├── package.json
+├── src
+│   ├── core
+│   │   └── AppCore.js
+│   ├── index.html
+│   ├── main.js
+│   ├── rendering
+│   │   ├── Camera.js
+│   │   └── Renderer.js
+│   ├── resources
+│   │   ├── Resources.js
+│   │   └── assets.js
+│   ├── shaders
+│   │   ├── fragment.glsl
+│   │   └── vertex.glsl
+│   ├── style.css
+│   ├── utils
+│   │   ├── Debug.js
+│   │   ├── EventEmitter.js
+│   │   ├── Sizes.js
+│   │   └── Time.js
+│   └── world
+│       ├── World.js
+│       ├── environment
+│       └── objects
 └── vite.config.js
+
+```
 
 ## 使用方法
 
@@ -104,22 +129,7 @@ This template provides a starting point for 3D graphics development using Three.
 - Clean implementation in vanilla JavaScript
 
 ## Project Structure
-threejs-vite-vanilla/
-├── node_modules/
-├── public/
-├── src/
-│   ├── lib/
-│   │   └── three-helpers.js
-│   ├── scripts/
-│   │   └── main.js
-│   └── styles/
-│       └── style.css
-├── .gitignore
-├── biome.json
-├── index.html
-├── package-lock.json
-├── package.json
-└── vite.config.js
+
 
 ## Usage
 
